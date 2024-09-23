@@ -1,0 +1,508 @@
+:root{
+    --bg-color: #0c0e0c;
+    --second-bg-color: #222222;
+    --hover-txt-color: #FF1D58;
+    --text-color: #FFFFFF;
+}
+
+html{
+    width: 100%;
+}
+
+
+@media (max-width: 1684px){
+    header{
+        padding: 14px 2%;
+        align-items: center;
+    }
+
+    .navbar a{
+        padding: 100px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 730px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px;
+        height: 50vh;
+        background-color: var(--bg-color);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 7px;
+        transition: all .80s ease;
+    }
+
+    .navlist a{
+        display: block;
+        margin: 13px 0;
+        padding: 0px 20px;
+        transition: all .10s ease;
+    }
+
+    .navlist a:hover{
+        color: var(--hover-txt-color);
+        transform: translateY(-4px);
+    }
+
+    .navlist.open{
+        right: 1%;
+    }
+}
+
+
+
+@media screen and (max-width: 780px) {
+
+    /* HEADER */
+    header {
+        width: 100%;
+        position: fixed;
+    }
+
+    /* LANDING PAGE */
+    .home-content{
+        flex-direction: column-reverse;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-container{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-container p, .text-animation {
+        font-weight: 600;
+        letter-spacing: 0.15rem;
+        font-size: 2rem;
+    }
+
+    .home-container h2, h2 span{
+        font-size: 3.5rem;
+    }
+
+    .home-container h2 span{
+        font-size: 3.5rem;
+    }
+
+    #profile-picture-one img{
+        position: static;
+        cursor: default;
+    }
+
+    /* ABOUT PAGE */
+    .container-one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction-container h1{
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 2px 2px;
+        letter-spacing: 0.10rem;
+        text-align: center;
+    }
+
+    .introduction-container h1 > span{
+        color: var(--hover-txt-color);
+        font-size: 2.1rem;
+        font-weight: 900;
+    }
+
+    .introduction{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
+    }
+    
+
+    .about-container{
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .about-container .introduction{
+        font-size: 1rem;
+    }
+
+    .contact{
+        text-align: center;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .contact-contents{
+        justify-content: center;
+    }
+    
+    .contact h1{
+        font-size: 1rem;
+        display:inline-flex;
+        flex-direction: column;
+    }
+
+    #mail > span{
+        font-size: 0.9rem;
+    }
+
+    #phone span {
+        font-size: 0.8rem;
+        font-weight: 900;
+    }
+
+
+    /* EXPERIENCE PAGE */
+    .exp-intro{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .exp-intro p {
+        text-align: center;
+        justify-content: center;
+    }
+
+    #Experience h2, h2 span{
+        font-size: 3rem;
+    }
+
+    #exp-container{
+        height: 5vh;
+    }
+
+    #exp-container img{
+        width: 45px;
+    }
+
+
+    /* PROJECTS CONTAINER */
+    .layer{
+        width: 200px;
+        height: 0;
+        background: linear-gradient(rgba(124, 61, 61, 0.1), #5f1429);
+        position: absolute;
+        border-radius: 8px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+        transition: height 0.5s;
+    }
+
+    .layer a{
+        font-size: 0.6rem;
+        width: 6rem;
+        font-weight: 700;
+        border: 1px solid var(--text-color);
+        margin: 1rem;
+        padding: 0.6rem;
+        border-radius: 20px;
+        color: var(--text-color);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .layer h5{
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    
+    .layer p{
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 0.9rem;
+    }
+
+
+
+    /* CONTACTS PAGE */
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* FOOTER */
+    #Footer{
+        width: 100%;
+    }
+
+    .footer_container p{
+        font-size: 0.5rem;
+    }
+
+}   
+
+
+
+
+
+
+
+
+@media screen and (max-width: 430px) {
+
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 30vh;
+        background-color: var(--bg-color);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 7px;
+        transition: all .80s ease;
+    }
+
+    .navlist a{
+        display: block;
+        margin: 10px 0;
+        padding: 0px 20px;
+        transition: all .10s ease;
+        font-size: 1.4rem;
+    }
+
+    .navlist a:hover{
+        color: var(--hover-txt-color);
+        transform: translateY(-4px);
+    }
+
+    .navlist.open{
+        right: 2%;
+    }
+
+
+    /* HEADER */
+    header{
+        width: 100%;
+    }
+
+    .navlist a{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .navlist a:hover{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+
+    /* LANDING PAGE */
+    #profile-picture-one img{
+        position: static;
+        cursor: default;
+        width: 45vh;
+    }
+
+    .home-container .greeting{
+        font-size: 1.5rem;
+    }
+
+    .home-container h2{
+        font-size: 2rem;
+    }
+
+    .home-container h2 span{
+        font-size: 2rem;
+    }
+
+    .home-container .text-animation{
+        font-size: 1rem;
+    }
+
+    .social-links{
+        width: 200px;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    /* ABOUT PAGE */
+    .introduction-container h1{
+        font-size: 1.5rem;
+    }
+
+    .introduction-container h1 span{
+        font-size: 1.5rem;
+    }
+
+    .introduction{
+        text-align: center;
+        font-size: 0.8rem;
+        width: 350px;
+        font-weight: 100;
+        margin: 0;
+    }
+
+    #profile-picture-two img{
+        width: 45vh;
+    }
+
+    .contact h1{
+        font-size: 0.8rem;
+    }
+
+    .contact-contents{
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+
+    #mail span, #phone span{
+        font-size: 0.8rem;
+    }
+
+
+    /* EXPERIENCE PAGE */
+    #Experience h4{
+        width: 250px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    #Experience{
+        padding: 10rem;
+    }
+
+    #Experience h2, h2 span{
+        font-size: 2.7rem;
+    }
+
+    #exp-container img{
+        width: 35px;
+    }
+
+    #exp-container{
+        width: 400px;
+    }
+
+    #exp-container p{
+        font-size: 0.7rem;
+    }
+    
+
+
+    /* PROJECTS PAGE */
+    #Projects p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    #Projects h2, #Projects h2 span{
+        font-size: 4rem;
+        text-align: center;
+        padding-right: 4px;
+    }
+
+    .proj-container{
+        flex-direction: column;
+    }
+
+    .proj-container h5{
+        font-size: 1rem;
+    }
+
+    .proj-container .layer p{
+        font-weight: 100;
+        font-size: 10rem;
+    }
+
+    .layer{
+        width: 250px;
+        height: 0;
+        background: linear-gradient(rgba(124, 61, 61, 0.1), #5f1429);
+        position: absolute;
+        border-radius: 8px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+        transition: height 0.5s;
+    }
+
+    .layer a{
+        font-size: 0.8rem;
+        width: 10rem;
+        font-weight: 700;
+        border: 1px solid var(--text-color);
+        margin: 1rem;
+        padding: 0.6rem;
+        border-radius: 20px;
+        color: var(--text-color);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .layer h5{
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    
+    .layer p{
+        font-size: 0.7rem;
+        text-align: center;
+        line-height: 0.9rem;
+    }
+
+
+    /* CONTACTS PAGE */
+    .contacts_container p, .contacts_container p span{
+        font-size: 0.8rem;
+    }
+
+    .contacts_container p span{
+        font-weight: 800;
+    }
+
+    .contact-heading{
+        width: 400px;
+    }
+
+
+    /* FOOTER */
+    #Footer p{
+        font-size: 0.5rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
